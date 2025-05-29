@@ -4,10 +4,10 @@ const eleventyNavigation = {
 	order: 3
 };
 ---
-# About
+# 
 
 
-  <h2>🛠️ About renn.design</h2>
+  <h2>About renn.design</h2>
   <p><strong>renn.design</strong> was founded on a simple goal: to make it easier for builders and designers to create better automotive parts, starting with the legendary <strong>BMW E30</strong>.</p>
   
   <p>Born from a passion for clean design and precise fitment, renn.design began as a side project to support my own E30 builds. I needed accurate geometry to model parts, prototype cleanly, and avoid guesswork. After investing in professional-grade 3D scanning equipment and dialing in the process, I realized these same tools could help other builders bring their ideas to life faster and with fewer headaches.</p>
@@ -19,11 +19,10 @@ const eleventyNavigation = {
   <h3>What You'll Find Here</h3>
   <ul>
     <li>Professionally cleaned <strong>3D scans of OEM parts</strong>, ready for use in CAD</li>
-    <li><strong>Instant downloads</strong> in formats like STL and OBJ</li>
     <li><strong>Sample scan</strong> available for free so you can try before you buy</li>
     <li>A few <strong>BMW E30 parts</strong> still in stock from when it all started</li>
   </ul>
-  <p>Every scan is created with attention to detail and real-world usability in mind. No junk data. No over-compressed files. No scan spam.</p>
+  
 
 <br>
 
