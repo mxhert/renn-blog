@@ -54,8 +54,23 @@
 
 		<header>
 			<a href="/" class="home-link">{{ metadata.title }}</a>
+			<nav>
+			<h2 class="visually-hidden">Top level navigation menu</h2>
+			<ul class="nav">
+				<li class="nav-item">
+				<a href="https://renn.design" target="_blank" rel="noopener">Store</a>
+				</li>
+				{%- for entry in collections.all | eleventyNavigation %}
+				<li class="nav-item">
+					<a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>
+					{{ entry.title }}
+					</a>
+				</li>
+				{%- endfor %}
+			</ul>
+			</nav>
 
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ 
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
@@ -63,7 +78,7 @@
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
 				{%- endfor %}
 				</ul>
-			</nav>
+			</nav> #}
 		</header>
 
 		<main id="main">
