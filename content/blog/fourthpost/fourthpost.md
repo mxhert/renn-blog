@@ -1,6 +1,6 @@
 ---
-title:  Now Available: Ultra-High Resolution BMW E30 Center Console 3D Scan
-description:  E30 center console 3D scans now available.
+title: "Now Available: Ultra-High Resolution BMW E30 Center Console 3D Scan"
+description: E30 center console 3D scans now available.
 date: 2025-04-26
 tags: ["3D Scanning", "New Product"]
 ---
