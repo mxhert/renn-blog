@@ -1,16 +1,27 @@
 ---
-title: This is my fourth post
-description: This is a post on My Blog about touchpoints and circling wagons.
-date: 2018-09-30
-tags: second tag
+title:  Now Available: Ultra-High Resolution BMW E30 Center Console 3D Scan
+description:  E30 center console 3D scans now available.
+date: 2025-04-26
+tags: ["3D Scanning", "New Product"]
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+If you’re working on a restoration, custom build, or interior upgrade for your BMW E30, this one’s for you. We’ve just released a complete ultra-high resolution 3D scan of both sections of the OEM E30 center console with ashtrays, ready to drop into your CAD workflow.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+This data set is the most accurate digital reference available for these parts — scanned from a clean, original console and aligned to a shared coordinate system for seamless integration.
 
-<img src="./possum.png" alt="A possum parent and two possum kids hanging from the iconic red balloon">
+<img src="./E30 Center Console Scans - Main.png" alt="BMW E30 Center Console 3D Scan">
 
-## Section Header
+## What's Included
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+Two scans of each part, a full-resolution for precision design and reduced-size to keep large assemblies more lightweight. 
 
+Center Console 51161941830 - 250MB/75MB STL
+
+Front Ashtray 51161904808 - 33MB/10MB STL
+
+Rear Console 51161884246 - 80MB/24MB STL
+
+Rear Ashtray 51161904809 - 15MB/5MB STL
+
+
+## Want More?
+We’re continuing to expand our catalog of high-quality scan data for the E30 and other enthusiast platforms. Have a request? Let us know what you want to see next.
