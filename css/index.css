@@ -45,6 +45,19 @@
 	navigation: auto;
 }
 
+.logo {
+  content: url("/logo-light.png");
+  width: 200px;
+  height: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    content: url("/logo-dark.png");
+  }
+}
+
+
 html,
 body {
 	padding: 0;
