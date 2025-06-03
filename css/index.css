@@ -297,3 +297,6 @@ header {
 	margin-right: 1em;
 }
 
+a.header-anchor {
+  display: none;
+}
