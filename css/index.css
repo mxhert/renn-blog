@@ -297,6 +297,12 @@ header {
 	margin-right: 1em;
 }
 
-a.header-anchor {
+/* Hide anchor links (hash symbols) next to headings */
+h1 > a.anchor,
+h2 > a.anchor,
+h3 > a.anchor,
+h4 > a.anchor,
+h5 > a.anchor,
+h6 > a.anchor {
   display: none;
 }
