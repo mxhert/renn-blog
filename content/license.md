@@ -12,20 +12,16 @@
   <p><strong>Depending on the license tier purchased, usage is as follows:</strong></p>
 
   <ul>
-    <li><strong>a) Personal License</strong><br>
+    <li><strong>Personal License</strong><br>
       For personal, educational, or hobbyist use only<br>
       No commercial use allowed<br>
       May not be used in paid client projects, monetized media, or product development
     </li>
-    <li><strong>b) Commercial License</strong><br>
+    <li><strong>Commercial License</strong><br>
       Use in product design, engineering, manufacturing, or part development allowed<br>
       Permitted to sell physical products derived from designs based on the Asset<br>
       May use renders/screenshots of the Asset in marketing or media<br>
       No redistribution or resale of the original or modified scan data itself
-    </li>
-    <li><strong>c) Enterprise License</strong><br>
-      Customized scope of use, team-wide or organizational<br>
-      Terms defined in a separate Enterprise Agreement
     </li>
   </ul>
 
@@ -33,8 +29,7 @@
   <p>Licensee may not:</p>
   <ul>
     <li>Sell, share, or distribute the Asset or any derivative digital file that includes the raw or deformed scan data</li>
-    <li>Upload the Asset to public repositories (e.g., GrabCAD, Thingiverse, GitHub)</li>
-    <li>Use the Asset in AI training datasets, digital twins, or metaverse applications without explicit written permission</li>
+    <li>Upload the Asset to public repositories</li>
     <li>Claim the scan or geometry as original work</li>
   </ul>
 
