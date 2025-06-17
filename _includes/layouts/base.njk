@@ -54,9 +54,13 @@
 
 		<header>
 			{#- <a href="/" class="home-link">{{ metadata.title }}</a> #}
-			    <a href="/">
-					<img src="{{ '/img/logo-light.png'  | url }}" alt="renn.design logo" width="200" /> 
-				</a>
+		<a href="/">
+  		<picture>
+    		<source srcset="/img/logo-light.png" media="(prefers-color-scheme: light)">
+    		<source srcset="/img/logo-dark.png" media="(prefers-color-scheme: dark)">
+   			<img src="/img/logo-dark.png" alt="renn.design logo" width="200">
+  			</picture>
+		</a>
 
 			<nav>
 			<h2 class="visually-hidden">Top level navigation menu</h2>
