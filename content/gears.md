@@ -1,4 +1,6 @@
-
+---
+title: Gear Ratio Calculator
+layout: base
 ---
 # 
 
