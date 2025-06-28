@@ -1,3 +1,4 @@
+ {% comment %}
 <ol reversed class="postlist" style="--postlist-index: {{ (postslistCounter or postslist.length) + 1 }}">
 {%- for post in postslist | reverse %}
 	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
@@ -6,3 +7,104 @@
 	</li>
 {%- endfor %}
 </ol>
+{% endcomment %}
+
+<div class="blog-posts-grid"> {# Use a div instead of ordered list for grid layout #}
+  {% for post in postslist %}
+    <div class="blog-post-card"> {# Card for each post #}
+      <a href="{{ post.url }}">
+        {% if post.data.firstImage %}
+          <img src="{{ post.data.firstImage }}" alt="{{ post.data.altText or 'Image for ' + post.data.title }}" class="post-card-image">
+        {% else %}
+          <img src="/img/placeholder.jpg" alt="Placeholder image for {{ post.data.title }}" class="post-card-image"> {# Fallback image #}
+        {% endif %}
+      </a>
+      <div class="post-card-content">
+        <h3><a href="{{ post.url }}" class="postslist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h3>
+        <time class="postslist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        {# Optional: Add a short description or excerpt #}
+        {% if post.data.description %}
+          <p>{{ post.data.description }}</p>
+        {% elif post.templateContent %}
+          {# You'll need `stripHtml` and `truncate` filters. See Step 3. #}
+          <p>{{ post.templateContent | safe | stripHtml | truncate(150, true, '...') }}</p>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+  /* Basic styling for the grid and cards */
+  .blog-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between cards */
+    margin-top: 40px;
+  }
+
+  .blog-post-card {
+    border: 1px solid var(--border-color, #eee); /* Use CSS variables for theme */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures image corners are rounded */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Soft shadow */
+    background-color: var(--card-background-color, #fff);
+    color: var(--text-color, #333);
+    display: flex;
+    flex-direction: column; /* Stack image and content */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+
+  .blog-post-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  }
+
+  .blog-post-card a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+  }
+
+  .blog-post-card img.post-card-image {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    display: block;
+  }
+
+  .post-card-content {
+    padding: 15px;
+    flex-grow: 1; /* Allows content area to expand */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-post-card h3 {
+    margin: 0 0 8px; /* Adjust spacing */
+    font-size: 1.3em;
+    line-height: 1.3;
+  }
+
+  .blog-post-card h3 a {
+    color: var(--heading-color, #007bff); /* Link color */
+    text-decoration: none;
+  }
+
+  .blog-post-card h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .blog-post-card time.postslist-date {
+    display: block;
+    font-size: 0.8em;
+    color: var(--light-text-color, #666); /* Adjust as per your theme */
+    margin-bottom: 10px;
+  }
+
+  .blog-post-card p {
+    margin: 0;
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: var(--text-color, #555);
+  }
+</style>
