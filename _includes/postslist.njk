@@ -1,15 +1,4 @@
- {% comment %}
-<ol reversed class="postlist" style="--postlist-index: {{ (postslistCounter or postslist.length) + 1 }}">
-{%- for post in postslist | reverse %}
-	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-		<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
-	</li>
-{%- endfor %}
-</ol>
-{% endcomment %}
-
-<div class="blog-posts-grid"> {# Use a div instead of ordered list for grid layout #}
+<div class="blog-posts-grid"> <!-- Use a div instead of ordered list for grid layout -->
   {% for post in postslist %}
     <div class="blog-post-card"> {# Card for each post #}
       <a href="{{ post.url }}">
@@ -26,7 +15,7 @@
         {% if post.data.description %}
           <p>{{ post.data.description }}</p>
         {% elif post.templateContent %}
-          {# You'll need `stripHtml` and `truncate` filters. See Step 3. #}
+          {# You'll need `stripHtml` and `truncate` filters in your .eleventy.js #}
           <p>{{ post.templateContent | safe | stripHtml | truncate(150, true, '...') }}</p>
         {% endif %}
       </div>
@@ -67,7 +56,7 @@
 
   .blog-post-card img.post-card-image {
     width: 100%;
-    height: 200px; /* Fixed height for consistency */
+    height: 250px; /* Increased height for consistency */
     object-fit: cover; /* Ensures image covers the area without distortion */
     display: block;
   }

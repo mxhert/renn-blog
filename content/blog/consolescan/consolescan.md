@@ -3,7 +3,7 @@ title: "Now Available: Ultra-High Resolution BMW E30 Center Console 3D Scan"
 description: E30 center console 3D scans now available.
 date: 2025-04-26
 tags: ["3D Scanning", "New Product"]
-firstImage: ./E30 Center Console Scans - Main.png # <--- Add this
+firstImage: /blog/consolescan/E30 Center Console Scans - Main.png # <--- Add this
 altText: BMW E30 Center Console 3D Scan # <--- Add a descriptive alt text
 ---
 If you’re working on a restoration, custom build, or interior upgrade for your BMW E30, this one’s for you. We’ve just released a complete ultra-high resolution 3D scan of both sections of the OEM E30 center console with ashtrays, ready to drop into your CAD workflow.
